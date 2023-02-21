@@ -1,3 +1,4 @@
+  GNU nano 2.3.1                                    File: gatk2.sh
 
 #!/bin/bash
 #SBATCH --job-name=g4gatk
@@ -35,7 +36,7 @@ input3=./HPC/VCFs/For_Students_2023/filtered*.vcf
 for file in $input3;
 do
      filename=$(basename "$file" .vcf)
-     gatk SelectVariants -V $file -L Cexcelsa_scaf_6:3689707-3698294 -O "$out"g50328"$filename".vcf
-     gatk SelectVariants -V $file -L Cexcelsa_scaf_1:4087537-4097474 -O "$out"g10739"$filename".vcf
-     gatk SelectVariants -V $file -L Cexcelsa_scaf_2:28891505-28897015 -O "$out"g44492"$filename".vcf
+     gatk SelectVariants -V $file -L Cexcelsa_scaf_6:3691706-3696294 -O "$out"g50328"$filename".vcf
+     gatk SelectVariants -V $file -L Cexcelsa_scaf_1:4089822-4095817 -O "$out"g10739"$filename".vcf
+     gatk SelectVariants -V $file -L Cexcelsa_scaf_2:28893505-28895015 -O "$out"g44492"$filename".vcf
 done
